@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="album/js/jquery-1.11.3.min.js"></script>
+		<script>
+			
+			
+			function playPause() { 
+    var music = document.getElementById('music2'); 
+    var music_btn = document.getElementById('music_btn2'); 
+    if (music.paused){ 
+        music.play(); 
+        music_btn.src = 'album/img_video/play.gif'; 
+    } 
+    else{ 
+        music.pause(); 
+        music_btn.src = 'album/img_video/pause.gif';  
+    } 
+} 
+		</script>
+	</head>
+	<body>
+		<div id="video_btu1" state='1'>close</div>
+		<div id="video1"></div>
+		<audio id="music2" src="video/Akon-Right Now(Na Na Na).mp3"  loop="loop">你的浏览器不支持audio标签。</audio> 
+		<a href="javascript:playPause();"><img src="album/img_video/pause.gif" width="48" height="50" id="music_btn2" border="0"></a>
+	</body>
+</html>

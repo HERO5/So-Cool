@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Lavish - Free Responsive Template</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+        <meta name="author" content="templatemo">
+        <!-- 
+        Lavish
+        http://www.templatemo.com/preview/templatemo_458_lavish
+        -->
+        
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- animate -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+		<!-- fullpage -->
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<!-- custom -->
+		<link rel="stylesheet" href="css/templatemo-style2.css">
+		<!--cat flash-->
+		<link rel="stylesheet" href="css/maolaoshifu.css" />
+		<script>
+			
+		</script>
+		<script>
+			var colors = new Array("pink","gray","black","orange","white");
+			var colors1 = new Array("lightcoral","#FFC1C1","#556B2F","#B3EE3A","#EE2C2C");
+			var colors2 = new Array("#D43F52","gray","#1a1a1a","#FF7F00","white");
+			var count = 2;
+			var size = 0;
+			function redirectPage() 
+				{
+					size = window.document.body.offsetWidth;
+					if((size <= 1024)){
+						document.body.style.backgroundImage = "url(bg_body/bg1_1024.jpg)";
+						size = 1024;
+					}else if((size > 1024) && (size <= 1280)){
+						document.body.style.backgroundImage = "url(bg_body/bg1_1280.jpg)";
+						size = 1280
+					}else if((size > 1280) && (size <= 1440)){
+						document.body.style.backgroundImage = "url(bg_body/bg1_1440.jpg)";
+						size = 1440;
+					}else if((size > 1440) && (size <= 1600)){
+						document.body.style.backgroundImage = "url(bg_body/bg1_1600.jpg)";
+						size = 1600;
+					}else if((size > 1600) && (size <= 1920)){
+						document.body.style.backgroundImage = "url(bg_body/bg1_1920.jpg)";
+						size = 1920;
+					}else{
+						document.body.style.backgroundImage = "url(bg_body/bg1_2560.jpg)";
+						size = 2560;
+					}
+				} 
+			function theme(){
+				size = window.document.body.offsetWidth;
+				if((window.document.body.offsetWidth <= 1024)){
+					size = 1024;
+				}else if((size > 1024) && (size <= 1280)){
+					size = 1280
+				}else if((size > 1280) && (size <= 1440)){
+					size = 1440;
+				}else if((size > 1440) && (size <= 1600)){
+					size = 1600;
+				}else if((size > 1600) && (size <= 1920)){
+					size = 1920;
+				}else{
+					size = 2560;
+				}
+				document.body.style.backgroundImage = "url(bg_body/bg"+count+"_"+size+".jpg)";
+				document.body.style.backgroundColor = colors[count-1];
+				document.getElementById("work").style.backgroundColor = colors1[count-1];
+				document.getElementById("portfolio").style.backgroundColor = colors2[count-1];
+				if(count==4||count==5){
+					document.body.style.color = "#000000";
+					if(count==5){
+						document.getElementById("portfolio_p").style.color = "#EE2C2C";
+					}
+				}else{
+					document.body.style.color = "#999";
+					document.getElementById("portfolio_p").style.color = "white";
+				}
+				count = count>=5?1:count+1;
+			}
+			function suppress1(){
+				window.location.href="start/index3.html"; 
+			}
+			function suppress2(){
+				window.location.href="start/index.html"; 
+			}
+			function suppress3(){
+				window.location.href="start/index4.html"; 
+			}
+			function album(partName){
+				window.location.href="album/index-color.html#"+partName; 
+			}
+		</script>
+	</head>
+	<body onload="redirectPage()">
+
+	  <div id="fullpage">
+	   <div class="mao_box" onclick="theme()">
+	  	<div class="mao">
+		<div class="mao_head">
+			<div class="huawen">
+				<div><!--头部花纹——左边橙色--></div>
+			</div>
+		</div>
+		<div class="erduo">
+			<div></div>
+			<div></div>
+		</div>
+		<div class="yanjing">
+			<div>
+				<div class="yanquan">
+					<div></div>
+				</div>
+				<div class="yanquan_hedding">
+
+				</div>
+				<div class="hong"></div>
+			</div>
+			<div class="yan_right">
+				<div class="yanquan">
+					<div></div>
+				</div>
+				<div class="yanquan_hedding">
+
+				</div>
+				<div class="hong"></div>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		<div class="face_huawen">
+			<div class="face_huawen_huawen huawen_left">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+
+			</div>
+			<div class="face_huawen_huawen huawen_right">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		<div class="bizi">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="zuiba_box">
+			<div class="zuiba">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	    </div>
+	   </div>
+
+		<!-- start home -->
+		<div id="home" class="section">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 wow fadeIn" data-wow-delay="0.9s">
+						<h3>Welcome to XU XIAOXU's page</h3>
+						<img class="img-circle" src="images2/vip3.jpg" ondblclick="suppress1()"/>
+						<h2 class="rotate">FASHION &AMP; ELEGANT, PURELY &AMP; LOVELY, KIND &AMP; OPTIMISTIC</h2>
+						<p>All like, mostly, but I'd love to .</p>
+						<a href="#work" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="1s">Get started</a>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</div>
+		<!-- end home -->
+
+		<!-- start work -->
+		<div id="work" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow bounce">
+						<h2>WHAT I DO</h2>
+					</div>
+                </div>  
+                
+                <div class="row">
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-bank"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">Responsive Design</h3>
+								<p>I have  <a rel="nofollow" href="">independent judgment, strong sense of business</a>, so I can have a thorough understanding of the business and make a strategic view of the capital market.</p>
+							</div>
+						</div>
+					</div>
+                    
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-camera"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">Photography</h3>
+								<p>Only in pictures, moments and eternity can coexist. The passion of shooting is the torch that ignites the eternal moment, the flame is not extinguished, and <a rel="nofollow" href="start/index2.html">the passion is not changed. </a></p>
+							</div>
+						</div>
+					</div>
+                    
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-paper-plane"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">UI &AMP; UX Design</h3>
+								<p>I can do the graphic design, creative work and production work of the software interface.And good at optimizing the page, allowing users to operate more humane. </p>
+							</div>
+						</div>
+					</div>
+                    
+				</div>
+			</div>
+		</div>
+		<!-- end work -->
+
+		<!-- start about -->
+		<div id="about" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.9s">
+						<h2>ABOUT HONOR &AMP; ABILITY</h2>
+						<h4>THESIS &AMP; PROJECTS</h4>
+						<p>I have published 3 papers on economics and 4 papers on mathematics.And one of them has been included in SCI.</p>
+						<p>Have join：How to link visible wages to invisible human capital. The plans of rebuild Pulitzer prize audit policy</p>
+					</div>
+					<div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.9s">
+						<span class="text-top">Economic Analysis<small>95%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+							</div>
+						<span>Logic analysis  <small>80%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+							</div>
+						<span>Mathematical Analysis <small>70%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+							</div>
+						<span>Aesthetic <small>90%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end about -->
+
+		<!-- start portfolio -->
+		<div id="portfolio" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 id="portfolio_p" class="wow bounce">COLLECTION</h2>
+				</div>
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/portfolio-img1.jpg" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay" onclick="album('album')">
+								<h4>Album</h4>
+								<h5>Record every quarter of Love</h5>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/portfolio-img2.jpg" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay" onclick="album('video')">
+								<h4>Video &amp; Music</h4>
+								<h5>The collision of perceptual and rational</h5>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/portfolio-img3.jpg" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay" onclick="album('culinary')">
+								<h4>Culinary Column</h4>
+								<h5>Only love and delish can not be lived up to</h5>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/portfolio-img4.jpg" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay" onclick="album('personal')">
+								<h4>Character Artwork</h4>
+								<h5> Worning！This is private</h5>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/portfolio-img5.jpg" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay" onclick="album('honor')">
+								<h4>My Honor</h4>
+								<h5>Low key does not mean absence</h5>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end portfolio -->
+
+		<!-- start contact -->
+		<div id="contact" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-lg-offset-1 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+						<address>
+							<p class="contact-title">CONTACT ME</p>
+							<p><i class="fa fa-phone"></i> I won not tell you </p>
+							<p  ondblclick="suppress3()"><i class="fa fa-envelope-o"></i> Just have a guess </p>
+							<p><i class="fa fa-map-marker"></i> I am everywhere </p>
+						</address>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
+						<form role="form" method="post" action="#">
+							<input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
+							<input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
+							<textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message"></textarea>
+							<input name="send" type="submit" class="form-control" id="send" value="SEND ME">
+						</form>
+					</div>
+					<div class="col-md-1 col-sm-1"></div>
+				</div>
+			</div>
+		</div>
+		<!-- end contact -->
+
+		<!-- start footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
+						<p style="color: #999;" ondblclick="suppress2()">Copyright &copy; 2017 Xu Xiaoxu</p>
+						<hr>
+						<ul class="social-icon">
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+
+	  </div>
+
+
+	  	<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- fullpage -->
+		<script src="js/jquery.fullPage.js"></script>
+		<!-- smoothScroll -->
+		<script src="js/smoothscroll.js"></script>
+		<!-- wow -->
+		<script src="js/wow.min.js"></script>
+		<!-- text rotater -->
+		<script src="js/jquery.simple-text-rotator.js"></script>
+		<!-- custom -->
+		<script src="js/custom.js"></script>
+
+	  
+	</body>
+	
+</html>
